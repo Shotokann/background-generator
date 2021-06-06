@@ -1,14 +1,14 @@
-//1. Write code so that the colour inputs match the background generated on the first page load. 
 
-//2. Display the initial CSS linear gradient property on page load.
+let _ = require('lodash');  //FOr use with Broswerify. You first need browserify (npm install -g browserify), then run 'browserify script.js > bundle.js', then change html page to use bundle.js instead of script.js
+//import { without } from 'lodash'; //modern way of using/importing files/methods 
 
-//3. BONUS: Add a random button which generates two random numbers for the colour inputs.
-
-var css = document.querySelector("h3");
-var color1 = document.querySelector(".color1");
-var color2 = document.querySelector(".color2");
-var body = document.getElementById("gradient");
-var random = document.getElementById("generateRandom");
+let array = [1, 2, 3, 4, 5, 6, 7, 8];
+console.log('answer: ', _.without(array, 3));
+let css = document.querySelector("h3");
+let color1 = document.querySelector(".color1");
+let color2 = document.querySelector(".color2");
+let body = document.getElementById("gradient");
+let random = document.getElementById("generateRandom");
 
 function setGradient() {
 	body.style.background = 
